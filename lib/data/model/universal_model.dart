@@ -1,10 +1,9 @@
-class UniversalRepository {
+class UniversalResponse {
   dynamic data;
   String error;
 
-  UniversalRepository({
+  UniversalResponse({
     this.data,
     this.error = '',
   });
-
 }
