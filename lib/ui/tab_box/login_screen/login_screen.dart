@@ -10,19 +10,9 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-  late SharedPreferences sharedPreferences;
-  TextEditingController _nameController = TextEditingController();
-  TextEditingController _passwordController = TextEditingController();
 
-  _init() async {
-    sharedPreferences = await SharedPreferences.getInstance();
-  }
-
-  @override
-  void initState() {
-    _init();
-    super.initState();
-  }
+  TextEditingController nameController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -47,7 +37,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 height: 20,
               ),
               TextField(
-                controller: _nameController,
+                controller: nameController,
                 keyboardType: TextInputType.name,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
@@ -58,7 +48,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 height: 20,
               ),
               TextField(
-                controller: _passwordController,
+                controller: passwordController,
                 keyboardType: TextInputType.visiblePassword,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
@@ -70,14 +60,10 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               ElevatedButton(
                 onPressed: () {
-                  if (_nameController.text.length > 0) {
-                    if (_passwordController.text.length > 0) {
-                      sharedPreferences.setString("name", _nameController.text);
-                      sharedPreferences.setString(
-                          "password", _passwordController.text);
-                      setState(() {
-                        _init();
-                      });
+                  if (nameController.text.length > 0) {
+                    if (passwordController.text.length > 0) {
+
+
                     } else {
                       ScaffoldMessenger.of(context).showSnackBar(
                         const SnackBar(

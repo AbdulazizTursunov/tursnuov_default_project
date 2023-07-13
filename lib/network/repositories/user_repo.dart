@@ -1,4 +1,6 @@
 
+import 'package:tursnuov_default_project/data/local/shared_preferences.dart';
+
 import '../../data/model/universal_model.dart';
 import '../../data/model/user/user_model.dart';
 import '../providers/api_provider.dart';
@@ -17,5 +19,9 @@ class UserRepo {
       return universalResponse.data as List<UserModel>;
     }
     return [];
+  }
+
+  Future<void> logOutUser() async{
+    StorageRepository.deleteString("token");
   }
 }

@@ -13,24 +13,38 @@ class CategorySelector extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 40,
+      height:60,
       child: ListView(
         scrollDirection: Axis.horizontal,
         children: [
+      Container(
+      margin: EdgeInsets.all(5),
+        decoration: BoxDecoration(
+          color: Colors.orange,
+          borderRadius: BorderRadius.circular(10),
+        ),
+        child:
           TextButton(
             onPressed: () {
               onCategorySelected.call("");
             },
             child: const Text("All"),
-          ),
+          ),),
           ...List.generate(categories.length, (index) {
-            return TextButton(
-              onPressed: () {
-                onCategorySelected.call(categories[index]);
-              },
-              child: Text(
-                categories[index],
+            return Container(
+              margin: EdgeInsets.all(5),
+              decoration: BoxDecoration(
+                color: Colors.orange,
+                borderRadius: BorderRadius.circular(10),
               ),
+            child: TextButton(
+                onPressed: () {
+                  onCategorySelected.call(categories[index]);
+                },
+                child: Text(
+                  categories[index],
+                ),
+            )
             );
           })
         ],
