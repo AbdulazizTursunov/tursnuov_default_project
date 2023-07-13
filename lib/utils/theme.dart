@@ -10,77 +10,77 @@ class TxtTheme{
           color: AppColors.white,
           fontSize: 15,
           fontWeight: FontWeight.w400,
-          fontFamily: "Poppins"),
+          fontFamily: "Inter"),
       displayMedium: TextStyle(
           color: AppColors.white,
           fontSize: 45,
           fontWeight: FontWeight.w700,
-          fontFamily: "Poppins"),
+          fontFamily: "Inter"),
       displaySmall: TextStyle(
           color: AppColors.white,
           fontSize: 36,
           fontWeight: FontWeight.w600,
-          fontFamily: "Poppins"),
+          fontFamily: "Inter"),
       //headline
       headlineLarge: TextStyle(
           color: AppColors.white,
           fontSize: 32,
           fontWeight: FontWeight.w700,
-          fontFamily: "Poppins"),
+          fontFamily: "Inter"),
       headlineMedium: TextStyle(
           color: AppColors.white,
           fontSize: 28,
           fontWeight: FontWeight.w500,
-          fontFamily: "Poppins"),
+          fontFamily: "Inter"),
       headlineSmall: TextStyle(
           color: AppColors.white,
           fontSize: 24,
           fontWeight: FontWeight.w400,
-          fontFamily: "Poppins"),
+          fontFamily: "Inter"),
 
       //title
       titleLarge: TextStyle(
           color: AppColors.white,
           fontSize: 22,
           fontWeight: FontWeight.w700,
-          fontFamily: "Poppins"),
+          fontFamily: "Inter"),
       titleMedium: TextStyle(
           color: AppColors.white,
           fontSize: 16,
           fontWeight: FontWeight.w600,
-          fontFamily: "Poppins"),
+          fontFamily: "Inter"),
       titleSmall: TextStyle(
           color: AppColors.white,
           fontSize: 14,
           fontWeight: FontWeight.w500,
-          fontFamily: "Poppins"),
+          fontFamily: "Inter"),
       //label
       labelLarge: TextStyle(
           color: AppColors.white,
           fontSize: 14,
           fontWeight: FontWeight.w600,
-          fontFamily: "Poppins"),
+          fontFamily: "Inter"),
       labelMedium: TextStyle(
           color: AppColors.white,
           fontSize: 12,
           fontWeight: FontWeight.w500,
-          fontFamily: "Poppins"),
+          fontFamily: "Inter"),
       labelSmall: TextStyle(
           color: AppColors.white,
           fontSize: 11,
           fontWeight: FontWeight.w500,
-          fontFamily: "Poppins"),
+          fontFamily: "Inter"),
       //body
       bodySmall: TextStyle(
           color: AppColors.white,
           fontSize: 16,
           fontWeight: FontWeight.w500,
-          fontFamily: "Poppins"),
+          fontFamily: "Inter"),
       bodyMedium: TextStyle(
           color: AppColors.white,
           fontSize: 14,
           fontWeight: FontWeight.w500,
-          fontFamily: "Poppins"),
+          fontFamily: "Inter"),
       bodyLarge: TextStyle(
           color: AppColors.white,
           fontSize: 13,
